@@ -1,0 +1,16 @@
+.pwd {
+    position: relative;
+}
+
+.p_viewer {
+    z-index: 9999;
+    position: absolute;
+    top: 30%;
+    right: 10px;
+    cursor: pointer;
+}
+
+.pass_img {
+    width: 20px;
+    padding-bottom: 10px;
+}

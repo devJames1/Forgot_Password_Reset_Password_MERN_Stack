@@ -66,8 +66,9 @@ const Login = () => {
 
                                 onChange={handleChange}
                             />
-                            <span onClick={togglePassword} className={styles.p_viewer}><img className={styles.pass_img} src={passwordShown ? "./images/open-eye.png" : "./images/closed-eye.png"} alt="show password icon" /></span>
+                            <span onClick={togglePassword} className={styles.p_viewer}><img className={styles.pass_img} src={passwordShown ? "/images/open-eye.png" : "/images/closed-eye.png"} alt="show password icon" /></span>
                         </div>
+                        <Link to="/forgot-password">Forgot Password</Link>
 
                         {error && <div className={styles.error_msg}>{error}</div>}
                         <button type='submit' className={styles.green_btn}>
