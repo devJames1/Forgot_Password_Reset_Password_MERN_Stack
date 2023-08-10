@@ -10,9 +10,12 @@ const forgotPassword = require("./Routes/forget-password");
 const resetPassword = require("./Routes/reset-password");
 
 //middlewares
-app.use(cors({
-    origin: true
-}))
+const corsConfig = {
+    origin: true,
+    credentials: true
+}
+app.use(cors(corsConfig))
+app.options("*", cors(corsConfig));
 app.use(express.json());
 
 
